@@ -33,3 +33,14 @@ a:active {
 article + article {
   border-top: solid 5px Blue;
 }
+::selection {
+  background-color: black;
+  color: white;
+}
+#soccer::after {
+  content: "⚽";
+}
+
+#electro::after {
+  content: "🧑‍🔧";
+}
