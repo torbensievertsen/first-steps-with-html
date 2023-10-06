@@ -19,3 +19,17 @@ header {
 main {
   padding: 16px;
 }
+a {
+  color: red;
+  margin-left: 20px;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+a:active {
+  color: hotpink;
+}
+article + article {
+  border-top: solid 5px Blue;
+}
