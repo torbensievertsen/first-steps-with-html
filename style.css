@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+}
+html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
@@ -37,10 +39,10 @@ article + article {
   background-color: black;
   color: white;
 }
-#soccer::after {
+.soccer::after {
   content: "⚽";
 }
 
-#electro::after {
+.electro::after {
   content: "🧑‍🔧";
 }
