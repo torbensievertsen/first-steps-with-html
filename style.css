@@ -46,3 +46,11 @@ article + article {
 .electro::after {
   content: "🧑‍🔧";
 }
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-subheading {
+  display: inline-block;
+}
