@@ -3,6 +3,7 @@
 }
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
 }
 body {
   margin: 0;
@@ -19,11 +20,12 @@ header {
   background-color: rgb(0, 255, 13);
 }
 main {
-  padding: 16px;
+  padding: 1rem;
+  max-width: 90ch;
 }
 a {
   color: red;
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 a:hover {
   background-color: black;
@@ -33,7 +35,7 @@ a:active {
   color: hotpink;
 }
 article + article {
-  border-top: solid 5px Blue;
+  border-top: solid 0.5rem Blue;
 }
 ::selection {
   background-color: black;
@@ -57,16 +59,24 @@ article + article {
 
 .Batch {
   background-color: blue;
-  padding: 10px;
+  padding: 1rem;
   position: absolute;
   color: white;
-  right: 10px;
-  top: 10px;
-  font-size: 20px;
-  border-radius: 5px;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1, 5rem;
+  border-radius: 0.5rem;
 }
 
 .heading {
   position: relative;
-  left: -10px;
+  left: -0.8rem;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.sub-title {
+  font-size: 1rem;
 }
