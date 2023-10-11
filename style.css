@@ -14,15 +14,28 @@ h3,
 h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
-header {
+.Head {
   padding: 30px;
   text-align: center;
   background-color: rgb(0, 255, 13);
 }
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
 main {
   padding: 1rem;
   max-width: 90ch;
 }
+
+.experience-head {
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   color: red;
   margin-left: 1rem;
@@ -93,6 +106,13 @@ article + article {
 @media screen and (min-width: 768px) {
   html {
     font-size: 18px;
+  }
+  .navigation {
+    flex-direction: row;
+  }
+  .experience-head {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 992px) {
