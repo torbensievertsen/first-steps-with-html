@@ -4,6 +4,11 @@
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
+  --main-color: rgb(10, 189, 10);
+  --body-color: white;
+  --link-color: red;
+  --text-color: black;
+  --batch-color: blue;
 }
 body {
   margin: 0;
@@ -17,7 +22,7 @@ h4 {
 .Head {
   padding: 30px;
   text-align: center;
-  background-image: linear-gradient(rgb(10, 189, 10), white);
+  background-image: linear-gradient(var(--main-color), var(--body-color));
 }
 
 .navigation {
@@ -37,22 +42,22 @@ main {
 }
 
 a {
-  color: red;
+  color: var(--link-color);
   margin-left: 1rem;
 }
 a:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--text-color);
+  color: var(--body-color);
 }
 a:active {
   color: hotpink;
 }
 article + article {
-  border-top: solid 0.5rem rgb(10, 189, 10);
+  border-top: solid 0.5rem var(--main-color);
 }
 ::selection {
-  background-color: black;
-  color: white;
+  background-color: var(--text-color);
+  color: var(--body-color);
 }
 .soccer::after {
   content: "⚽";
@@ -71,10 +76,10 @@ article + article {
 }
 
 .Batch {
-  background-color: blue;
+  background-color: var(--batch-color);
   padding: 1rem;
   position: absolute;
-  color: white;
+  color: var(--body-color);
   right: 1rem;
   top: 1rem;
   font-size: 1, 5rem;
@@ -125,6 +130,6 @@ article + article {
 }
 
 .footer {
-  background-color: rgb(10, 189, 10);
+  background-color: var(--main-color);
   padding: 2rem;
 }
