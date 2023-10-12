@@ -17,7 +17,7 @@ h4 {
 .Head {
   padding: 30px;
   text-align: center;
-  background-color: rgb(0, 255, 13);
+  background-image: linear-gradient(rgb(10, 189, 10), white);
 }
 
 .navigation {
@@ -48,7 +48,7 @@ a:active {
   color: hotpink;
 }
 article + article {
-  border-top: solid 0.5rem Blue;
+  border-top: solid 0.5rem rgb(10, 189, 10);
 }
 ::selection {
   background-color: black;
@@ -122,4 +122,9 @@ article + article {
   .Batch {
     position: fixed;
   }
+}
+
+.footer {
+  background-color: rgb(10, 189, 10);
+  padding: 2rem;
 }
