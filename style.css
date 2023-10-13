@@ -31,6 +31,15 @@ h4 {
   text-align: left;
 }
 
+.nav-link {
+  transition: 0.5s;
+}
+
+.nav-link:focus {
+  outline-color: var(--text-color);
+  outline-style: dotted;
+}
+
 main {
   padding: 1rem;
   max-width: 90ch;
