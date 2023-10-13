@@ -25,6 +25,15 @@ h4 {
   background-image: linear-gradient(var(--main-color), var(--body-color));
 }
 
+.Head:hover .Batch {
+  transform-origin: 100% 0%;
+  transform: scale(3);
+}
+
+.Head:focus-within .Batch {
+  transform: scale(1.5);
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
@@ -93,6 +102,8 @@ article + article {
   top: 1rem;
   font-size: 1, 5rem;
   border-radius: 0.5rem;
+  transform-origin: 100% 0%;
+  transition: transform ease 1s;
 }
 
 .heading {
